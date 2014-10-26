@@ -10,6 +10,7 @@ class Cargo < Formula
 
   def install
     system "./configure", "--prefix=#{prefix}", "--disable-debug"
+    system "make"
     system "make install"
   end
 end
