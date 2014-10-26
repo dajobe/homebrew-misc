@@ -5,6 +5,7 @@ class Cargo < Formula
   head "https://github.com/rust-lang/cargo.git" # , :revision => "commit"
 
   depends_on "rust"
+  depends_on "cmake" => :build
 
   def install
     system "./configure", "--prefix=#{prefix}", "--disable-debug", "--disable-dependency-tracking"
