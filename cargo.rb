@@ -9,7 +9,7 @@ class Cargo < Formula
   depends_on "pkg-config"
 
   def install
-    system "./configure", "--prefix=#{prefix}", "--disable-debug", "--disable-dependency-tracking"
+    system "./configure", "--prefix=#{prefix}", "--disable-debug"
     system "make install"
   end
 end
