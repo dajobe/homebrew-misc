@@ -2,8 +2,8 @@ require "formula"
 
 class Cargo < Formula
   homepage "http://crates.io"
-  url "https://github.com/rust-lang/cargo/archive/master.tar.gz"
-  version "wip"
+  url "curl -O https://static.rust-lang.org/cargo-dist/cargo-nightly-x86_64-apple-darwin.tar.gz"
+  version "nightly"
   head "https://github.com/rust-lang/cargo.git"
 
   depends_on "rust"
