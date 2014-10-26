@@ -1,10 +1,8 @@
 require "formula"
 
 class Cargo < Formula
-  homepage "http://crates.io/"
-  url "https://static.rust-lang.org/cargo-dist/cargo-nightly-x86_64-apple-darwin.tar.gz"
-  version "nightly"
-  head "https://github.com/rust-lang/cargo.git"
+  homepage "http://doc.crates.io/"
+  head "https://github.com/rust-lang/cargo.git" # , :revision => "commit"
 
   depends_on "rust"
 
