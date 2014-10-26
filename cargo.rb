@@ -6,6 +6,7 @@ class Cargo < Formula
 
   depends_on "rust"
   depends_on "cmake" => :build
+  depends_on "pkg-config"
 
   def install
     system "./configure", "--prefix=#{prefix}", "--disable-debug", "--disable-dependency-tracking"
